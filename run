@@ -1,0 +1,1 @@
+scrapy crawl pspider -a source=$1

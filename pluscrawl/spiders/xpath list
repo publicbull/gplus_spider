@@ -1,0 +1,9 @@
+xpath list
+
+results = hxs.select('//div[@class="Hwa"]/div')
+
+auth url		:	results.select("div/div[2]/span[1]/a/@href").extract()
+reviewer name 	:	results.select('div/div[2]/span[1]/a/text()').extract()
+review date  	:	result.select('div/div[2]/span[2]/text()').extract()
+review rate 	:	result.select('div/div[2]/div/span/span[2]/text()').extract()
+review text		:	result.select('div/div[2]/div[2]/span/text()').extract()
